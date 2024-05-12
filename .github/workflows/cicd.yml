@@ -69,6 +69,10 @@ jobs:
             echo "GODOT_VERSION=$last_valid_version" >> $GITHUB_ENV
           fi
 
+      - name: debug print GODOT_VERSION
+        run: |
+          echo Godot version: ${{ env.GODOT_VERSION }}
+
       - name: unit tests with godot gut
         if: ${{ !env.is_release }}
         uses: ceceppa/godot-gut-ci@main
