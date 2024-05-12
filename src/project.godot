@@ -18,3 +18,7 @@ config/icon="res://assets/sprites/icon.svg"
 [editor_plugins]
 
 enabled=PackedStringArray("res://addons/gut/plugin.cfg")
+
+[rendering]
+
+textures/vram_compression/import_s3tc_bptc=true

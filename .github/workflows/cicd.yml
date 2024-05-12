@@ -130,4 +130,5 @@ jobs:
             ${{ steps.build.outputs.archive_directory }}/**/*.zip
             ${{ steps.build.outputs.build_directory }}/**/*.exe
             ${{ steps.build.outputs.build_directory }}/**/*.x86_64
+            ${{ steps.build.outputs.build_directory }}/**/*.app
             ./webserver/webserver.py
