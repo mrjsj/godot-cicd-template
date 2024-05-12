@@ -14,3 +14,7 @@ config/name="Godot CICD Template"
 run/main_scene="res://assets/scenes/hello_world.tscn"
 config/features=PackedStringArray("4.2", "Forward Plus")
 config/icon="res://assets/sprites/icon.svg"
+
+[editor_plugins]
+
+enabled=PackedStringArray("res://addons/gut/plugin.cfg")
