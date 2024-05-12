@@ -3,3 +3,4 @@
 **/.godot/export_credentials.cfg
 **/.godot/uid_cache.bin
 builds
+**/.godot/editor/**
