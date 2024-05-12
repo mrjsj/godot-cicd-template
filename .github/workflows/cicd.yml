@@ -34,7 +34,7 @@ jobs:
 
           echo found minor version: ${version_prefix}
           # Initialize the patch number and the last valid version variable
-          patch_number=0
+          patch_number=1
           last_valid_version=""
 
           # Loop to increment the patch number and check the website response
