@@ -45,7 +45,9 @@ jobs:
               version="${version_prefix}.${patch_number}"
               
               # Make the website request
-              response=$(curl -o /dev/null -s -w "%{http_code}\n" "https://downloads.tuxfamily.org/godotengine/${version}")
+              echo "Trying to download version $version ..."
+              response=$(curl -o /dev/null -s -w "%{http_code}\n" "https://godotengine.org/download/archive/${version}-stable")
+              # response=$(curl -o /dev/null -s -w "%{http_code}\n" "https://downloads.tuxfamily.org/godotengine/${version}")
 
               # Check the response code
               if [ "$response" = "404" ]; then
